@@ -114,7 +114,11 @@ void VirtualConsole::key_down(Keys::Keys key)
 	case Keys::KEY_BACKSPACE:
 		ch = '\b';
 		break;
-		
+
+    case Keys::KEY_TAB:
+        ch = '\t';
+        break;
+
 	case Keys::KEY_LSHIFT:
 	case Keys::KEY_RSHIFT:
 		_current_mod_mask = _current_mod_mask | Shift;
